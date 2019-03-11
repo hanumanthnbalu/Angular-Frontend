@@ -1,0 +1,10 @@
+<mat-toolbar color="warn">
+  <span><a routerLink="/">My_shop</a></span>
+  <span class="spacer"></span>
+  <ul>
+    <li *ngIf="userIsAuthenticated"><a mat-button  routerLink="/create" routerLinkActive="active">New Product</a></li>
+    <li *ngIf="!userIsAuthenticated"><a mat-button  routerLink="/login" routerLinkActive="active">Login</a></li>
+    <li *ngIf="!userIsAuthenticated"><a mat-button  routerLink="/signup" routerLinkActive="active">Signup</a></li>
+    <li *ngIf="userIsAuthenticated"><button mat-button (click)="onLogout()">Logout</button></li>
+  </ul>
+</mat-toolbar>

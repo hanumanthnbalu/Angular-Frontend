@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Faster+One');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+main {
+  width: 80%;
+  margin: auto;
+}
+mat-form-field,
+textarea {
+    width: 100%;
+    margin-top: 1rem;
+}
+mat-expansion-panel.mat-expansion-panel {
+  margin: 2px 0px ;
+}
+mat-toolbar > span a{
+  // font-family: 'Great Vibes', cursive;
+  font-family: 'Monoton', cursive;
+  color: white;
+  font-size: 1.75rem;
+  // background-image:  linear-gradient(to right bottom, rgba(250, 0, 0, 0.8), rgba(68, 245, 244, 0.8));
+  background-color: #000;
+  padding: 0px 10px;
+  border: 1.5px solid white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+a.active {
+  color: green;
+  background-color: white
+}
+mat-spinner {
+  margin: auto;
+}
