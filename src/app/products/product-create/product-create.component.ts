@@ -90,7 +90,6 @@ export class ProductCreateComponent implements OnInit, OnDestroy {
     });
   }
 
-
   onImagePicked(event: Event) {
     const file = (event.target as HTMLInputElement).files[0];
     this.form.patchValue({ image: file });
